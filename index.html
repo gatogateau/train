@@ -1,0 +1,74 @@
+<!-- When adding trains, administrators should be able to submit the following:
+Train Name
+Destination 
+First Train Time -- in military time
+Frequency -- in minutes
+Code this app to calculate when the next train will arrive; this should be relative to the current time.
+Users from many different machines must be able to view same train times.
+ -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <center>
+            <h1>Train Schedule</h1>
+        </center>
+        <div class="subTitle">
+            <center>here comes the train</center>
+        </div>
+        <div>
+
+        </div>
+    </div>
+    <table class="trainTable">
+        <tr id="schedHeader"><h4>Current Train Schedule</h4>
+            <th>train name |</th>
+            <th>destination | </th>
+            <th>frequency (min)|</th>
+            <th>next arrival |</th>
+            <th>minutes away </th>
+
+        </tr>
+    </table>
+    <div class="addTrain">
+        <form><center><h4>add train</h4></center>
+
+            <p>Train Name:
+                <input type="text" name="trainName" size="15" maxlength="100" />
+            </p>
+            <p>Destination:
+                <input type="text" name="destination" size="15" maxlength="100" />
+            </p>
+            <p>First Train Name:
+                <input type="text" name="trainName" size="15" maxlength="100" />
+            </p>
+            <p>Frequency:
+                <input type="text" name="frequency" size="15" maxlength="100" />
+            </p>
+            <button class="submit">Submit</button>
+
+        </form>
+        <div>
+
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
